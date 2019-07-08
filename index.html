@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello JS calculator </h1>
+    <div class="viewer">0</div>
+    <Form name="calc" id="calculator">
+
+                <Input type="text" name="input" size="32" class="display" readonly placeholder="0"/>
+
+        <div class = "buttons">
+            <Input type="button" name ="one" value ="1" OnClick="calc.input.value += '1'">
+            <Input type="button" name ="two" value ="2" OnClick="calc.input.value += '2'">
+            <Input type="button" name ="three" value ="3" OnClick="calc.input.value += '3'">
+            <br>
+            <Input type="button" name ="four" value ="4" OnClick="calc.input.value += '4'">
+            <Input type="button" name ="five" value ="5" OnClick="calc.input.value += '5'">
+            <Input type="button" name ="six" value ="6" OnClick="calc.input.value += '6'">
+            <br>
+            <Input type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
+            <Input type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
+            <Input type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
+            <br>
+            
+        </div>
+        <div class="opers">
+            <Input type="button" name="add" value="+" OnClick="calc.input.value += '+'">
+            <Input type="button" name="sub" value="-" OnClick="calc.input.value += '-'">
+            <Input type="button" name="mul" value="x" OnClick="calc.input.value += '*'">
+            <Input type="button" name="div" value="/" OnClick="calc.input.value += '/'">
+            <br>
+            <Input type="button" name="clear" value="c" OnClick="calc.input.value = ''">
+            <Input type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
+            <Input type="button" name="doit" value="=" OnClick="calc.input.value = eval (calc.input.value)">
+            <Input type="button" name="dot" value="." OnClick="calc.input.value += '.'">
+        </div>
+    </ Form>
+<script src ="js/index.js"></script>
+</body>
+</html>
